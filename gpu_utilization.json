@@ -98,7 +98,7 @@
           },
           "editorMode": "code",
           "exemplar": false,
-          "expr": "count(DCGM_FI_DEV_GPU_UTIL{pod!=\"\",kubernetes_node!=\"\"})",
+          "expr": "count(DCGM_FI_DEV_GPU_UTIL{pod!=\"\",kubernetes_node!=\"\"}) or vector(0)",
           "instant": true,
           "legendFormat": "__auto",
           "range": false,
@@ -1257,6 +1257,6 @@
   "timezone": "",
   "title": "GPU Utilization Dashboard",
   "uid": "r9x7iJMVz",
-  "version": 12,
+  "version": 2,
   "weekStart": ""
 }
